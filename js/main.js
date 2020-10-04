@@ -1,6 +1,6 @@
 $(document).ready(
   $.get(
-      "https://opendata.epa.gov.tw/ws/Data/ATM00625/?$format=json",
+      "./json/pm25.json",
       function(data) {
           let table = "<thead><tr><th>縣市</th><th>觀測站名稱</th><th>PM2.5 濃度（μg/m<sup>3</sup>）</th><th>資料更新時間</th></tr></thead><tbody>";
           data.forEach((element) => {
